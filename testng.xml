@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listener.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/IdeaProjects/BookSwagon">
+        <classes>
+            <class name="com.bs.qa.testcases.FictionBooksPageTest">
+                <methods>
+                    <include name="verifyFicBook"/>
+                    <include name="verifyBookTest"/>
+                </methods>
+            </class>
+            <class name="com.bs.qa.testcases.HomePageTest">
+                <methods>
+                    <include name="testHomePageTitle"/>
+                    <include name="testClickOnNewArrivalsLink"/>
+                    <include name="testClickOnFictionBooksLink"/>
+                    <include name="testClickOnRequestBookLink"/>
+                </methods>
+            </class>
+            <class name="com.bs.qa.testcases.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="bsLogoImageTest"/>
+                    <include name="loginTest"/>
+                    <include name="Multi_loginTest"/>
+                </methods>
+            </class>
+            <class name="com.bs.qa.testcases.NewArrivalsPageTest">
+                <methods>
+                    <include name="verifyNewArrive"/>
+                    <include name="verifyLanguageTest"/>
+                    <include name="verifyBindingTest"/>
+                </methods>
+            </class>
+            <class name="com.bs.qa.testcases.RequestBookPageTest">
+                <methods>
+                    <include name="verifyReqBook"/>
+                    <include name="verifyBook_title"/>
+                    <include name="verifyQuantity_new"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
